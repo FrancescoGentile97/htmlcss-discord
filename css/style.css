@@ -33,6 +33,16 @@ h1 {
     padding-bottom: 20px;
 }
 
+h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
 h5 {
     color: blue;
 }
@@ -55,7 +65,7 @@ a {
 
 .container-section1 {
     display: flex;
-    flex-grow: 1;
+    flex-basis: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,7 +73,7 @@ a {
 
 .container1-section2 {
     display: flex;
-    width: 70%;
+    flex-basis: 70%;
     background-image: url(../img/item1.svg);
     background-size: cover;
 }
@@ -71,14 +81,16 @@ a {
 
 .container2-section2 {
     display: flex;
-    width: 30%;
+    flex-basis: 30%;
+    flex-direction: column;
+    padding-top: 2rem;
 
 }
 
 
 .container1-section3 {
     display: flex;
-    width: 70%;
+    flex-basis: 80%;
     background-image: url(../img/item2.svg);
     flex-direction: column;
     justify-content: center;
@@ -87,15 +99,14 @@ a {
 
 .container2-section3 {
     display: flex;
-    width: 30%;
-    padding-right: 20px;
-
+    flex-basis: 20%;
+    flex-direction: column;
+    padding-top: 2rem;
 }
-
 
 .container1-section4 {
     display: flex;
-    width: 70%;
+    flex-basis: 80%;
     background-image: url(../img/item3.svg);
     background-size: cover;
 
@@ -103,7 +114,9 @@ a {
 
 .container2-section4 {
     display: flex;
-    width: 30%;
+    flex-basis: 20%;
+    flex-direction: column;
+    padding-top: 2rem;
 }
 
 .container1-section5 {
@@ -119,8 +132,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 100%;
 }
+
 
 .logo-container {
     display: flex;
@@ -155,7 +168,9 @@ a {
 }
 
 .row2 {
-    height: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .row-footer {
@@ -211,8 +226,10 @@ a {
 
 .container2-section6 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 1;
+
 }
 
 .btn-small {
@@ -258,7 +275,8 @@ a {
 
 .btn-black {
     color: aliceblue;
-    background-color: #232A2A;;
+    background-color: #232A2A;
+    ;
 }
 
 .btn-blue {
